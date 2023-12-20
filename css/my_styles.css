@@ -6,6 +6,17 @@ p {
     line-height: 2;
 }
 
+h1 {
+    margin-bottom: 20px;
+}
+
+h5 {
+    font-size: 1.15em;
+
+}
+a {
+    text-decoration: none;
+}
 .name {
     font-size: 3.5em;
 }
@@ -20,7 +31,7 @@ p {
 }
 
 .social_bar img {
-    width: 4%; /* Adjust the percentage as needed */
+    width: 40px; /* Adjust the percentage as needed */
     height: auto; /* Maintain the aspect ratio */
     margin-left: 2vw;
     transition: transform 0.3s ease; /* Smooth transition for the transform property */

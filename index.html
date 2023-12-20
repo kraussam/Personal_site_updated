@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
     <link rel="stylesheet" href="css/main_styles.css">
     <link rel="stylesheet" href="css/my_styles.css">
     <link rel="stylesheet" href="css/column&button_styles.css">
+
+    <script src="js/info_button.js" defer></script>
 
 
 
@@ -26,8 +27,8 @@
 <section class="intro_content">
     <div class="name"> Hi, I'm Andreas Krauß! </div>
     <p> Thanks for visiting. Here's a tad bit about myself </p>
-    <p> User Experience Enthusiast, <span class="my_button"> competitor</span>, go-getter, securities hobbyist, <span class="my_button"> lounge music fan</span>, pianist, cycler, skier & <span class="my_button"> learner and builder</span>.</p>
-    <p> I am a Bcom Student with a background in Manufacturing that loves to make things happen. Lets connect! Send me an email <span class="my_button my_button_color"> andreas@andreskrauss.ca</span> or follow me on <span class="my_button my_button_color"> LinkedIn</span></p>
+    <p> User Experience Enthusiast, <a href="projects.html" class="my_button"> competitor</a>, go-getter, securities hobbyist, <a href="projects.html" class="my_button"> lounge music fan</a>, pianist, cycler, skier & <a href="projects.html" class="my_button"> learner and builder</a>.</p>
+    <p> I am a Bcom Student with a background in Manufacturing that loves to make things happen. Lets connect! Send me an email <a href="projects.html" class="my_button my_button_color"> andreas@andreskrauss.ca</a> or follow me on <a class="my_button my_button_color"> LinkedIn</a></p>
 </section>
 
 <section class="intro_content">
@@ -36,26 +37,73 @@
 
 
 <section class="main_content">
-    <h5> ARTICLES</h5>
+    <h5> FEATURED</h5>
     <h1> Latest Stories from Krauss </h1>
 
     <div class="two-column-section">
-        <div class="column-2-3"> <img src="media/projects/networking/rsm_people.jpg" alt=""> </div>
+        <div class="column-2-3">
+            <img src="media/projects/networking/rsm_people.jpg" alt="">
+            <article> <header> <h4>Ready Set Market 2023</h4> <div> Nov. 23 </div><img src="media/icons/info.png"> </header> </article>
+            <p> Organizing and hosting the Ready Set Market! (RSM) case competition in collaboration with the Innovative Business Association at UofT was a rewarding experience.</p>
+            <p> Promoting the event to over 1500 students, professors, and industry professionals required determination, contributing to the success of the event attended by 150 people. On the event day, I enjoyed hosting & engaging with attendees, I remember making down the lunch queue to talk to everyone.</p>
+        </div>
+
 
         <div class="column-1-3">
             <article>
-            <header> <H6> NETWORKING </H6>  <img src="media/icons/info.png" alt="" style=""> </header>
-            <p>
-                Hello
-            </p>
+                <header> <H6> NETWORKING </H6> <div> Dec. 23</div> <img src="media/icons/info.png" alt="" style=""> </header>
+                <div>Various Competitions in Toronto ranging from ACE Nationals to UofT Invitationals </div>
             </article>
 
+            <article>
+                <header> <H6> PROJECTS </H6> <div> Dec. 23</div> <img src="media/icons/info.png" alt="" style=""> </header>
+                <div> What you're reading right now. While not an immediately useful skill, I love building things. This website, made myself using html, css, and JS, serves as a place to put things.</div>
+            </article>
 
+            <article>
+                <header> <H6> INTERNSHIP Search </H6> <div> Dec. 23</div> <img src="media/icons/info.png" alt="" style=""> </header>
+                <div> Applying, practicing interviews and more. Hoping to score one for the 2024 summer semester</div>
+            </article>
 
         </div>
     </div>
 </section>
 
+<section class="sub_content">
+    <h5> SEASONAL</h5>
+    <h1> My Library's Latest Pick </h1>
+    <p> This winter I find myself reading this renowned classic for the 3rd time. Whether by the fireplace, or in bed, I'm sure anyone remotely interested in investment will find this read great.  </p>
+    <img src="media/home/book.jpg">
+    <p>If you're interested, here's a link to purchase it on <a href="projects.html" class="my_button" style="margin-block: 0"> amazon.</a> Happy Reading!</p>
+</section>
+
+
+
+
+<section class="centered_content">
+    <img src="media/home/background.png" alt="Background Image">
+    <h5>UPCOMING</h5>
+    <h1>A Small, Big Project</h1>
+    <p> I have always had trouble applying to internships consistently. Some days I will sit down for a few hours, but then weeks will pass without applying to a single one. </p>
+    <p> My goal is to create a simple solution that reminds and encourages. Not a comprehensive, integrated solution –– a reminder. Unfortunately, this requires knowledge a bit beyond my reach of python and webdev. I will need to learn data analytics, electron API, & more.  </p>
+    <p> Until then, I have made an alternative tracker (mostly for myself), that I use to keep track of internships. I find it really helpful. </p>
+    <div class="my_button"> Download it here! </div>
+</section>
+
+<section class="sub_content">
+    <h5> EXTRAS</h5>
+    <h1> Want to See More? </h1>
+    <p> Thanks for making to the end of this page, I really appreciate it! </p>
+    <p> Although this iteration of my website took me less than 2 days to make, this was certainly not the case when initially learning how.</p>
+
+    <p>If you're interested in seeing more of my work, click this link to see <a href="projects.html" class="my_button" style="margin-block: 0"> my projects.</a> </p>
+</section>
+
+
+<footer>
+    © 2023 Andreas Krauss. All rights reserved. No part of this site may be reproduced without my written permission
+    <a href="index.html" class="my_button" style="margin-left: auto"> To top</a>
+</footer>
 
 
 </body>

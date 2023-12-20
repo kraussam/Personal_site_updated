@@ -1,10 +1,7 @@
-
 /* COLUMNS */
 .two-column-section {
     display: flex;
 }
-
-
 
 .column-2-3 {
     flex: 2; /* 2/3 width for the first column */
@@ -16,40 +13,59 @@
     width: 100%;
     height: auto;
     border-radius: 10px;
+    margin-bottom: 20px;
 
 }
+.column-2-3 article header {
+    display: flex;
+    align-items: center;
+}
+
+.column-2-3 article header img {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+.column-2-3 article header div {
+    margin-left: auto;
+}
+
 
 .column-1-3 {
     flex: 1; /* 1/3 width for the second column */
     height: auto;
-
+    max-width: 400px; /* maintains 1-3 ratio until a certain point */
 }
 
-.column-1-3 article{
+.column-1-3 article {
     height: auto;
     padding-inline: 20px;
     padding-block: 10px;
     background-color: var(--primary-bg-color);
     border-radius: 10px;
     margin-bottom: 20px;
-
 }
 
 .column-1-3 article header {
     display: flex;
+    align-items: center;
 }
 
 .column-1-3 article header img {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+.column-1-3 article header div {
     margin-left: auto;
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease;
 }
 
-.column-1-3 article header img:hover{
-    transform: scale(1.2); /* Increase the size by 20% on hover */
+.column-1-3 article header h6 {
+    margin-right: 10px; /* Add spacing between H6 and the image */
 }
-
 
 
 
@@ -62,7 +78,8 @@
     padding-inline: 10px;
     border-radius: 8px;
     margin-inline: 5px;
-    margin-block: 10px;
+
+    line-height: 1.75;
     transition: background-color 2.5s ease;
 }
 
@@ -77,7 +94,7 @@
 
 .my_button_color:hover {
     color: white; /* Change the text color on hover */
-    background-color: #A6ABBD; /* Change the background color on hover */
+    background-color: var(--accent-color-A); /* Change the background color on hover */
 }
 
 @keyframes wiggle {
