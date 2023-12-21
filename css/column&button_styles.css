@@ -1,4 +1,5 @@
-/* COLUMNS */
+/* TWO COLUMN SECTION */
+
 .two-column-section {
     display: flex;
 }
@@ -67,6 +68,85 @@
     margin-right: 10px; /* Add spacing between H6 and the image */
 }
 
+/* 3 COLUMN SECTION */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 4px;
+    margin-right: 2px;
+    margin-top: 6vw;
+}
+.column {
+    flex: 33%;
+    max-width: 33.33%; /* limited the 3rd column at 33% for some reason */
+    padding: 0px 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.img_container {
+    position: relative;
+    display: inline-block; /* Ensure inline-block for positioning */
+}
+
+.img_container:hover .caption-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.social-item {
+    position: absolute;
+    filter: invert(100%);
+    top: 8px; /* Adjust the top position as needed */
+    right: 8px; /* Adjust the right position as needed */
+    z-index: 1; /* Ensure the icon appears above other content */
+    opacity: 0.80;
+
+}
+
+.caption-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(199, 199, 199, 0.7); /* Adjust the background color and opacity */
+    color: #000000;
+    text-align: center;
+    padding: 8px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s; /* Updated transition property */
+
+}
+
+
+
+
+    /* Responsive layout - makes a two column-layout instead of four columns */
+    @media screen and (max-width: 800px) {
+        .column {
+            flex: 50%;
+            max-width: 50%;
+        }
+        .column_odd{
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .column {
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+
 
 
 /* BUTTONS */
@@ -74,14 +154,23 @@
     display: inline-block;
     background-color: white;
     color: black;
-    padding-block: 5px;
     padding-inline: 10px;
+    padding-block: 5px;
+    margin-block: 5px;
     border-radius: 8px;
     margin-inline: 5px;
+    /* Set a minimum width for the button */
+    min-width: 100px; /* Adjust the value according to your needs */
+
+    /* Prevent text from wrapping */
+    white-space: nowrap;
+
 
     line-height: 1.75;
     transition: background-color 2.5s ease;
 }
+
+
 
 .my_button:hover {
     background-color: white;

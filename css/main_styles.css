@@ -91,10 +91,10 @@ footer {
 .navbar {
     background-color: var(--secondary-bg-color);
     overflow: hidden;
-    padding-inline: 2vw;
+    padding-inline: 3vw;
     padding-block: 40px;
     display: flex;
-    justify-content: flex-end; /* Align links to the right */
+    justify-content: end; /* Align links to the right */
 }
 
 .navbar a {
@@ -106,28 +106,12 @@ footer {
     margin-inline: 20px;
     transition: background-color 0.3s, color 0.3s; /* Added transitions for background-color and color */
 }
+.navbar div {
+    font-size: 3em;
+}
 
 .navbar a:hover {
     background-color: #ddd;
     color: black;
 }
 
-/* Media Queries */
-@media (max-width: 1024px) {
-    /* Tablet styles */
-    .navbar {
-        padding: 10px 5vw; /* Adjust padding for tablet */
-    }
-}
-
-@media (max-width: 768px) {
-    /* Mobile styles */
-    .navbar {
-        justify-content: center; /* Center links on mobile */
-    }
-
-    .navbar a {
-        display: block;
-        margin-bottom: 10px;
-    }
-}
