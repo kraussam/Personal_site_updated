@@ -160,7 +160,7 @@
     border-radius: 8px;
     margin-inline: 5px;
     /* Set a minimum width for the button */
-    min-width: 100px; /* Adjust the value according to your needs */
+    min-width: 80px; /* Adjust the value according to your needs */
 
     /* Prevent text from wrapping */
     white-space: nowrap;
