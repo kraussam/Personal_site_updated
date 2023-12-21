@@ -1,0 +1,54 @@
+
+
+
+/*SOCIAL BAR */
+.social_bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align the social bar to the right */
+    width: 100%; /* Take up all the horizontal space */
+}
+
+.social_bar img {
+    width: 40px; /* Adjust the percentage as needed */
+    height: auto; /* Maintain the aspect ratio */
+    margin-left: 20px;
+    transition: transform 0.3s ease; /* Smooth transition for the transform property */
+}
+
+.social_bar img:hover {
+    transform: scale(1.2); /* Increase the size by 20% on hover */
+
+}
+
+
+
+
+/* NAVIGATION BAR */
+.navbar {
+    background-color: var(--secondary-bg-color);
+    overflow: hidden;
+    padding-inline: 3vw;
+    padding-block: 40px;
+    display: flex;
+    justify-content: end; /* Align links to the right */
+}
+
+.navbar a {
+    display: inline-block;
+    color: grey;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-inline: 20px;
+    transition: background-color 0.3s, color 0.3s; /* Added transitions for background-color and color */
+}
+.navbar div {
+    font-size: 3em;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
