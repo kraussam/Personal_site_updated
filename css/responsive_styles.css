@@ -1,11 +1,12 @@
+.responsive_add {
+    display:none;
+}
+
 /* Media Queries */
 @media (max-width: 1024px) {
     /* Tablet styles */
     .navbar {
         padding: 10px 5vw; /* Adjust padding for tablet */
-    }
-    .responsive_add {
-        display:none;
     }
 }
 
@@ -46,9 +47,8 @@
     }
 
     .responsive_add {
-        display: initial;
+        display: block;
         margin-left: 10px;
-        padding-top: 4vw;
     }
 
 
