@@ -54,7 +54,7 @@ body {
 .centered_content {
     margin-block: 100px;
     padding-inline: 20vw;
-    padding-block: 3vw;
+    padding-block: max(4vw, 40px);
     position: relative;
     text-align: center;
     color: white;
