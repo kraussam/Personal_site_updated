@@ -13,7 +13,7 @@
 }
 
 .intro_content {
-    margin-block: 4vw;
+    margin-block: 50px;
     margin-inline: 6vw;
     width: 80%;
 }
@@ -30,7 +30,7 @@ body {
 
 /*Main Sections */
 .main_content {
-    margin-block: 8vw;
+    margin-block: 100px;
     margin-inline: 3vw;
     padding: 3vw;
     background-color: var(--secondary-bg-color);
@@ -39,7 +39,7 @@ body {
 }
 
 .sub_content {
-    margin-block: 8vw;
+    margin-block: 100px;
     margin-inline: 6vw;
     width: 60%;
 
@@ -52,7 +52,7 @@ body {
 }
 
 .centered_content {
-    margin-block: 8vw;
+    margin-block: 100px;
     padding-inline: 20vw;
     padding-block: 3vw;
     position: relative;
