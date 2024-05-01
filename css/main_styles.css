@@ -12,17 +12,34 @@
 
 }
 
-.intro_content {
+.intro_content, .history_content {
     margin-block: 50px;
-    margin-inline: 6vw;
-    width: 80%;
+    margin-inline: 3vw;
+    text-align: center;
+    align-items: center;
+}
+
+.history_content {
+    text-align: left;
+    background-color: white;
+    padding: 3vw;
+}
+.history_content p {
+    margin-block: 1em;
+}
+
+.history_content h1 {
+    border-bottom: 2px solid black;
+
 }
 
 body {
     /* Default font */
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
-    font-weight: 300;
+    font-weight: lighter;
+    font-family: "Lato", sans-serif;
+
 
 }
 
@@ -34,52 +51,32 @@ body {
     margin-inline: 3vw;
     padding: 3vw;
     background-color: var(--secondary-bg-color);
+    text-align: center;
+    align-items: center;
 
-    border-radius: 20px;
 }
 
 .sub_content {
     margin-block: 100px;
     margin-inline: 6vw;
-    width: 60%;
-
-}
-
-.newsletter_content {
-    margin-block: 100px;
-    margin-inline: 6vw;
     text-align: center;
     align-items: center;
-
 }
+
+
+.slides_content img{
+    width: 100%;
+    height: 100%;
+}
+
 .sub_content img {
     width: 100%;
     height: 100%;
-    border-radius: 20px;
 }
 
-.centered_content {
-    margin-block: 100px;
-    padding-inline: 20vw;
-    padding-block: max(4vw, 40px);
-    position: relative;
-    text-align: center;
-    color: white;
-}
 
-.centered_content img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Crop the image to cover the container */
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
 
-.centered_content p {
-    text-align: left;
-}
+
 
 
 /* FOOTER */
@@ -87,10 +84,12 @@ footer {
     margin-top: 8vw;
     padding-inline: 6vw;
     padding-block: 40px;
-    background-color: #43414F;
-    color: white;
+    background-color: white;
+    color: black;
     display: flex;
+    text-align: center;
     align-items: center;
+
 }
 
 /* GENERAL */
@@ -112,6 +111,13 @@ h5 {
 a {
     text-decoration: none;
 }
-.name {
-    font-size: 3.5em;
+.title {
+    font-size: 8em;
+    display: inline-block;
+    line-height: 1em;
+    padding-top: 40px;
+    margin-bottom: 20px;
+
+
+
 }
