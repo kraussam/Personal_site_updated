@@ -1,3 +1,72 @@
+/* TWO COLUMN SECTION */
+
+.two-column-section {
+    display: flex;
+}
+
+.column-2-3 {
+    flex: 2; /* 2/3 width for the first column */
+    margin-right: 20px;
+    height: auto;
+}
+
+.column-2-3 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+.column-2-3 article header {
+    display: flex;
+    align-items: center;
+}
+
+.column-2-3 article header img {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+.column-2-3 article header div {
+    margin-left: auto;
+}
+
+
+.column-1-3 {
+    flex: 1; /* 1/3 width for the second column */
+    height: auto;
+    max-width: 400px; /* maintains 1-3 ratio until a certain point */
+}
+
+.column-1-3 article {
+    height: auto;
+    padding-inline: 20px;
+    padding-block: 10px;
+    background-color: var(--primary-bg-color);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.column-1-3 article header {
+    display: flex;
+    align-items: center;
+}
+
+.column-1-3 article header img {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+.column-1-3 article header div {
+    margin-left: auto;
+}
+
+.column-1-3 article header h6 {
+    margin-right: 10px; /* Add spacing between H6 and the image */
+}
 
 /* 3 COLUMN SECTION */
 .row {
@@ -5,7 +74,7 @@
     flex-wrap: wrap;
     margin-left: 4px;
     margin-right: 2px;
-
+    margin-top: 6vw;
 }
 .column {
     flex: 33%;
@@ -48,8 +117,8 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: black;
-    color: white;
+    background-color: rgba(199, 199, 199, 0.7); /* Adjust the background color and opacity */
+    color: #000000;
     text-align: center;
     padding: 8px;
     visibility: hidden;
@@ -81,106 +150,65 @@
         }
     }
 
-/* 2 COLUMN SECTION */
-.row2 {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 4px;
-    margin-right: 2px;
-    margin-top: 3vw;
-}
-.column2 {
-    flex: 50%;
-    max-width: 50%;
-    padding: 0px 3vw;
-    text-align: left;
-}
 
-.column2 img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-    transition: filter 0.3s ease, opacity 0.3s ease;
-}
-
-.img_container2 {
-    position: relative;
-    display: inline-block; /* Ensure inline-block for positioning */
-}
-
-.img_container2:hover .caption-text2 {
-    visibility: visible;
-    opacity: 1;
-}
-
-.social-item2 {
-    position: absolute;
-    filter: invert(100%);
-    top: 8px; /* Adjust the top position as needed */
-    right: 8px; /* Adjust the right position as needed */
-    z-index: 1; /* Ensure the icon appears above other content */
-    opacity: 0.80;
-    width: 30px;
-    height: 26px;
-}
-
-.caption-text2 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(24, 24, 24, 0.6); /* Adjust the background color and opacity */
-    color: #000000;
-    text-align: center;
-    padding: 8px;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s, visibility 0.3s; /* Updated transition property */
-}
-
-/* Responsive layout - makes a single column layout */
-@media screen and (max-width: 1000px) {
-    .column2 {
-        flex: 100%;
-        max-width: 100%;
-    }
-}
 
 /* BUTTONS */
-.button_1, .button_1b , .button_1c {
+.my_button {
     display: inline-block;
     background-color: white;
     color: black;
-    padding: 5px 10px; /* Adjust padding as needed */
-    margin: 5px;
+    padding-inline: 10px;
+    padding-block: 5px;
+    margin-block: 5px;
+    border-radius: 8px;
+    margin-inline: 5px;
+    /* Set a minimum width for the button */
     min-width: 80px; /* Adjust the value according to your needs */
-    white-space: nowrap; /* Prevent text from wrapping */
+
+    /* Prevent text from wrapping */
+    white-space: nowrap;
+
+
     line-height: 1.75;
-    transition: transform 0.2s ease, background-color 0.5s ease, color 0.5s ease; /* Apply transition to transform, background-color, and color properties */
+    transition: background-color 2.5s ease;
 }
 
-.button_1:hover {
-    transform: scale(1.05); /* Scale up by 5% on hover */
-    background-color: black; /* Change background color on hover */
-    color: white; /* Change text color on hover */
+
+
+.my_button:hover {
+    background-color: white;
+    color: black;
+    animation: wiggle 2.5s linear;
+}
+.my_button_color {
+    transition: color 1s ease, background-color 1s ease; /* Transition for color change */
 }
 
-.button_1b:hover {
-    background-color: red;
-    color: white;
+.my_button_color:hover {
+    color: white; /* Change the text color on hover */
+    background-color: var(--accent-color-A); /* Change the background color on hover */
 }
 
-.button_1c:hover {
-    transform: scale(1.05); /* Scale up by 5% on hover */
+@keyframes wiggle {
+    0%, 7% {
+        transform: rotateZ(0);
+    }
+    15% {
+        transform: rotateZ(-15deg);
+    }
+    20% {
+        transform: rotateZ(10deg);
+    }
+    25% {
+        transform: rotateZ(-10deg);
+    }
+    30% {
+        transform: rotateZ(6deg);
+    }
+    35% {
+        transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+        transform: rotateZ(0);
+    }
 }
-
-.button_1c {
-    color: white;
-    background-color: black;
-}
-.button_1c:hover {
-    transform: scale(1.05); /* Scale up by 5% on hover */
-    background-color: red; /* Change background color on hover */
-    color: white; /* Change text color on hover */
-}
-

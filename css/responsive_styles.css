@@ -26,12 +26,15 @@
         margin-inline: 10px;
     }
 
-
+    .sub_content {
+        width: 80%;
+        display: none;
+    }
 
     .responsive_remove {
         display: none;
     }
-    .title {
+    .name {
         font-size: 3em;
     }
     .centered_content {
